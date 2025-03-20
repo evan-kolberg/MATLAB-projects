@@ -1,8 +1,8 @@
 
 syms x
 
-f(x) = 1/4 * x + 2;
-g(x) = sqrt(x) + 2;
+f(x) = sqrt(x) + 2;
+g(x) = 1/16 * x^2 + 2;
 
 intersections = solve(f(x) == g(x), x);
 real_intersections = double(intersections);
