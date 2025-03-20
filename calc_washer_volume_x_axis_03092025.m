@@ -1,3 +1,4 @@
+
 syms x
 
 f(x) = 2*x;        % outer
@@ -22,5 +23,5 @@ integrand = @(x) pi * (f_num(x).^2 - g_num(x).^2);
 
 volume = integral(integrand, a, b);
 
-fprintf('The volume of the solid of revolution is approximately %.4f cubic units.\n', volume);
+fprintf('The volume of the washer (revolved around the x axis) is approximately %.4f cubic units.\n', volume);
 
