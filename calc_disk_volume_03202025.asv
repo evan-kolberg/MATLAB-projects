@@ -1,0 +1,13 @@
+syms x
+
+f(x) = sqrt(x);
+a = 0;
+b = 4;
+
+f_num = matlabFunction(f);
+
+integrand = @(x) pi * (f_num(x).^2);
+
+volume = integral(integrand, a, b);
+
+
