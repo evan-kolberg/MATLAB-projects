@@ -38,6 +38,12 @@ Z_x = f_num(X_x) .* sin(Theta_x);
 
 figure;
 surf(X_x, Y_x, Z_x);
+hold on;
+[R_cap, Theta_cap] = meshgrid(linspace(0, f_num(b), 10), theta);
+X_cap = b * ones(size(R_cap));
+Y_cap = R_cap .* cos(Theta_cap);
+Z_cap = R_cap .* sin(Theta_cap);
+surf(X_cap, Y_cap, Z_cap);
 xlabel('x'); ylabel('y'); zlabel('z');
 title('Solid of Revolution Around X-axis');
 axis equal;
@@ -49,12 +55,15 @@ Z_y = g_num(Y_y) .* sin(Theta_y);
 
 figure;
 surf(X_y, Y_y, Z_y);
+hold on;
+[R_cap, Theta_cap] = meshgrid(linspace(0, g_num(d), 10), theta);
+X_cap = R_cap .* cos(Theta_cap);
+Y_cap = d * ones(size(R_cap));
+Z_cap = R_cap .* sin(Theta_cap);
+surf(X_cap, Y_cap, Z_cap);
 xlabel('x'); ylabel('y'); zlabel('z');
 title('Solid of Revolution Around Y-axis');
 axis equal;
-
-
-
 
 
 
