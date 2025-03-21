@@ -2,7 +2,7 @@
 syms x
 
 f(x) = sqrt(x) + 2;
-g(x) = 1/16 * x^2 + 2;
+g(x) = 1/32 * x^2 + 2;
 
 intersections = solve(f(x) == g(x), x);
 real_intersections = double(intersections);
