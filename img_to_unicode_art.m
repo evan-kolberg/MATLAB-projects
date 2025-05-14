@@ -2,7 +2,7 @@
 % imread returns a 3D matrix that stores pixel color data
 % might return something like [550, 550, 3]
 % [height, width, # of color channels]
-img = imread('iStock.jpg');
+img = imread('shutterstock.jpg');
 
 
 % converts the matrix to [height, width]
